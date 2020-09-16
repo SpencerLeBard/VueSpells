@@ -4,8 +4,8 @@
     <br />
     {{spell.desc}}
     <br />
-    <!-- <button @submit="addSpell">Add Spell</button>
-    <button @submit="deleteSpell">Delete Spell</button>-->
+    <button></button>
+    <button></button>
   </div>
 </template>
 
