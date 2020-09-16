@@ -1,6 +1,6 @@
 <template>
   <div class="col-4" id="apispells">
-    <div class="card" @click="setActive()">
+    <div class="card" @click="setActiveSpell()">
       <p>{{spellprop.name}}</p>
     </div>
   </div>
@@ -13,7 +13,7 @@ export default {
   },
   methods: {
     setActiveSpell() {
-      this.$store.dispatch("setActiveSpell", this.spellprop);
+      this.$store.dispatch("setSpellDetails", this.spellprop.name);
     },
   },
   props: ["spellprop"],

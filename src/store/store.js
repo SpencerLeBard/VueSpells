@@ -20,6 +20,7 @@ export default new Vuex.Store({
   actions: {
     async spellSearch({ commit }) {
       let res = await api.get("spells")
+      console.log(res);
       commit("setApiSpells", res.data.results)
       commit("setSpellDetails", {})
     },

@@ -1,27 +1,23 @@
 <template>
   <div id="spell-details">
-    <div class="card" v-if="spellprop.name">
-      <div class="card-body">
-        <h5 class="card-title">{{spellprop.name}}</h5>
-        <button>Add to Sandbox</button>
-      </div>
-    </div>
+    {{spell}}
+    {{spell.desc}}
+    <br />
+    <button>Add Spell</button>
+    <button>Delete Spell</button>
   </div>
 </template>
 
 <script>
 export default {
   name: "spell-details",
-  data() {
-    return {};
-  },
   computed: {
-    setActiveSpell() {
-      return this.$store.state.activeSpell;
+    spell() {
+      return this.$store.state.spellDetails;
     },
   },
 };
 </script>
 
-<style scoped>
+<style>
 </style>
