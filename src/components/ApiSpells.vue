@@ -13,7 +13,7 @@ export default {
   },
   methods: {
     setActiveSpell() {
-      this.$store.dispatch("setSpellDetails", this.spellprop.name);
+      this.$store.dispatch("setSpellDetails", this.spellprop.index);
     },
   },
   props: ["spellprop"],
